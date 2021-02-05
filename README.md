@@ -5,7 +5,11 @@
 </br></br>
 Tabela de conteúdos
 =================
-<!-- TOC -->autoauto- [1. Groovy Script](#1-groovy-script)auto    - [1.1. Adicionar Attachment](#11-adicionar-attachment)auto    - [1.2. Ler um Property](#12-ler-um-property)autoauto<!-- /TOC -->
+<!-- TOC -->
+* [1. Groovy Script](#1-groovy-script)
+    * [1.1. Adicionar Attachment](#11-adicionar-attachment)
+    * [1.2. Ler um Property](#12-ler-um-property)
+<!-- /TOC -->
 </br></br>
 ---
 
