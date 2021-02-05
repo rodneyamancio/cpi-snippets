@@ -2,9 +2,14 @@
 
 <p align="center">🚀 Snippets para ser usado no SAP CPI, principalmente em Groovy Script<p>
 
----
 </br></br>
-<!-- TOC -->autoauto- [1. Groovy Script](#1-groovy-script)auto    - [1.1. Adicionar Attachment](#11-adicionar-attachment)auto    - [1.2. Texto 2](#12-texto-2)autoauto<!-- /TOC -->
+Tabela de conteúdos
+=================
+<!-- TOC -->
+* [1. Groovy Script](#1-groovy-script)
+    * [1.1. Adicionar Attachment](#11-adicionar-attachment)
+    * [1.2. Ler um Property](#12-ler-um-property)
+<!-- /TOC -->
 </br></br>
 ---
 
@@ -19,4 +24,12 @@ def sTextoLog = 'Texto que vai para o LOG, podendo ser um JSON ou XML por exempl
 messageLog.addAttachmentAsString("NomeAttachment", sTextoLog, "text/plain");
 ```
 
-## 1.2. Texto 2
+## 1.2. Ler um Property
+Caso você tenha setado um Property em um content modifier, você pode ler ele a partir de um script groovy usando o código abaixo.
+
+>> 🙋 Se você estiver trabalhando com tipos diferentes como Int, não esqueça de usar um toInteger()
+
+```groovy
+    def map = message.getProperties()
+    int sProperty = map.get("PropertyQueQuerLer").toString()
+```
